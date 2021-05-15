@@ -13,7 +13,7 @@ const IndexScreen = () => {
             <Button title='Add Post' onPress={addBlogPosts} />
             <FlatList
             data={data}
-            keyExtractor={blogPost => blogPost.title}
+            keyExtractor={blogPosts => blogPosts.title}
             renderItem={({ item }) => {
                 return <Text>
                     {item.title}
